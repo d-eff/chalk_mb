@@ -140,11 +140,6 @@ table {
   background-color: #cad1dd; }
 
 .financials-invoiceWrap {
-  background: url(../images/financials-invoices-bg.png) no-repeat center center #f2f2f2;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   box-sizing: auto;
   position: relative; }
   .financials-invoiceWrap ul {
@@ -186,7 +181,7 @@ table {
 #mrin-overlay {
   position: absolute;
   top: 197px;
-  left: 26px;
+  left: 29px;
   max-width: 320px;
   display: none; }
 
@@ -207,3 +202,5 @@ table {
 @media (max-width: 400px) {
   .nomobile {
     display: none; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

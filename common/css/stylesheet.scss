@@ -143,11 +143,6 @@ $filet: #cad1dd;
   background-color: #cad1dd;
 }
 .financials-invoiceWrap {
-  background: url(../images/financials-invoices-bg.png) no-repeat center center $lightGrey; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   box-sizing: auto;
   position:relative;
   ul {
@@ -195,7 +190,7 @@ $filet: #cad1dd;
 #mrin-overlay {
   position: absolute;
   top: 197px;
-  left: 26px;
+  left: 29px;
   max-width: 320px;
   display: none;
 }
