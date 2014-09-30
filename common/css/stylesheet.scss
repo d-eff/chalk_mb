@@ -1,0 +1,222 @@
+@import "_reset.scss";
+
+$darkblue: #223466;
+$darkerBlue: #2b385a;
+$darkestBlue: #233666;
+$pink: #ff989a;
+$paddingGrey: #d2d6e0;
+$lightGrey: #f2f2f2;
+$darkGrey: #dfdfdf;
+$finGrey: #e5e5e5;
+$filet: #cad1dd;
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 1152px;
+  overflow: auto;
+  position: relative;
+}
+
+.fullImg {
+  width: 100%;
+  display:block;
+}
+
+.tardis-left {
+  display: inline-block;
+  float: left;
+  @include breakpoint(500px) {
+    display: block;
+    width: 100%;
+  }
+}
+.tardis-right {
+  display: inline-block;
+  float: right;
+}
+.tardis-header {
+  background-color: white;
+  overflow: auto;
+}
+
+.alertBox {
+  background-color: $pink;
+}
+
+.tardis-banner {
+  background-color: $darkblue;
+}
+
+.breadCrumb {
+  background-color: white;
+  border-bottom: 10px solid $paddingGrey;
+}
+
+.reviewStatus {
+  background-color: $lightGrey;
+}
+
+.analysisWrapper {
+  background-color: $darkerBlue;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.analysisBoxes {
+  overflow-y: hidden;
+  li {
+    width: 32%;    
+    display: inline-block;
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  @include breakpoint(600px) {
+    width: 900px;
+  }
+}
+
+.productWrapper {
+  background-color: $darkestBlue;
+}
+.ticketWrap {
+  background-color: $darkestBlue;
+}
+
+.downloadPlans {
+  background-color: $lightGrey;
+}
+
+.selectItem {
+  background-color: $darkGrey;
+}
+
+.suppliesWrapper {
+
+  div {
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+  background: url(../images/tardis-foodbg.png) no-repeat center center $lightGrey; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height:500px;
+  position:relative;
+}
+
+.resourcesWrap {
+  overflow: hidden;
+  background-color: $lightGrey;
+}
+
+.resourceBoxes {
+  overflow-y: hidden;
+  li {
+    width: 32%;
+    display: inline-block;
+    img {
+      width: 100%;
+      display: block;
+    }
+    @include breakpoint(500px) {
+      width: 100%;
+    }
+  }
+}
+
+.footerWrap {
+  background-color: $darkblue;
+}
+
+.financials-activity {
+  background-color: $finGrey;
+  div {
+    padding: 0 40px 132px;
+    box-sizing: border-box;
+
+  }
+}
+.financials-invoices {
+  background-color: #cad1dd;
+}
+.financials-invoiceWrap {
+  background: url(../images/financials-invoices-bg.png) no-repeat center center $lightGrey; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: auto;
+  position:relative;
+  ul {
+    margin: 0 0 110px;
+  }
+  li {
+    margin: 4px 40px;
+  }
+  
+}
+.fin-overlay {
+  display: none;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+
+}
+.blackout {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5;
+}
+.tardis-overlay {
+  display: none;
+  z-index: 10;
+  position: fixed;
+
+}
+.service-button {
+  width: 100%;
+
+}
+.issue-wrap {
+  display: inline-block;
+  max-width: 230px;
+  position: absolute;
+  top: 260px;
+  left: 36px;
+  display: none;
+}
+#mrin-overlay {
+  position: absolute;
+  top: 197px;
+  left: 26px;
+  max-width: 320px;
+  display: none;
+}
+.prod-overlay {
+  display: none;
+  position: absolute;
+  top: 112px;
+  z-index: 10;
+}
+
+.mobile-opt {
+  display: none;
+  @include breakpoint(400px) {
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+    
+  }
+}
+.nomobile {
+  @include breakpoint(400px) {
+    display: none;
+  }
+}

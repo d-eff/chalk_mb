@@ -1,0 +1,209 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 1152px;
+  overflow: auto;
+  position: relative; }
+
+.fullImg {
+  width: 100%;
+  display: block; }
+
+.tardis-left {
+  display: inline-block;
+  float: left; }
+  @media (max-width: 500px) {
+    .tardis-left {
+      display: block;
+      width: 100%; } }
+
+.tardis-right {
+  display: inline-block;
+  float: right; }
+
+.tardis-header {
+  background-color: white;
+  overflow: auto; }
+
+.alertBox {
+  background-color: #ff989a; }
+
+.tardis-banner {
+  background-color: #223466; }
+
+.breadCrumb {
+  background-color: white;
+  border-bottom: 10px solid #d2d6e0; }
+
+.reviewStatus {
+  background-color: #f2f2f2; }
+
+.analysisWrapper {
+  background-color: #2b385a;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.analysisBoxes {
+  overflow-y: hidden; }
+  .analysisBoxes li {
+    width: 32%;
+    display: inline-block;
+    position: relative; }
+    .analysisBoxes li img {
+      width: 100%;
+      display: block; }
+  @media (max-width: 600px) {
+    .analysisBoxes {
+      width: 900px; } }
+
+.productWrapper {
+  background-color: #233666; }
+
+.ticketWrap {
+  background-color: #233666; }
+
+.downloadPlans {
+  background-color: #f2f2f2; }
+
+.selectItem {
+  background-color: #dfdfdf; }
+
+.suppliesWrapper {
+  background: url(../images/tardis-foodbg.png) no-repeat center center #f2f2f2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+  position: relative; }
+  .suppliesWrapper div {
+    box-sizing: border-box;
+    padding: 0 40px; }
+
+.resourcesWrap {
+  overflow: hidden;
+  background-color: #f2f2f2; }
+
+.resourceBoxes {
+  overflow-y: hidden; }
+  .resourceBoxes li {
+    width: 32%;
+    display: inline-block; }
+    .resourceBoxes li img {
+      width: 100%;
+      display: block; }
+    @media (max-width: 500px) {
+      .resourceBoxes li {
+        width: 100%; } }
+
+.footerWrap {
+  background-color: #223466; }
+
+.financials-activity {
+  background-color: #e5e5e5; }
+  .financials-activity div {
+    padding: 0 40px 132px;
+    box-sizing: border-box; }
+
+.financials-invoices {
+  background-color: #cad1dd; }
+
+.financials-invoiceWrap {
+  background: url(../images/financials-invoices-bg.png) no-repeat center center #f2f2f2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: auto;
+  position: relative; }
+  .financials-invoiceWrap ul {
+    margin: 0 0 110px; }
+  .financials-invoiceWrap li {
+    margin: 4px 40px; }
+
+.fin-overlay {
+  display: none;
+  position: absolute;
+  top: 10px;
+  z-index: 10; }
+
+.blackout {
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5; }
+
+.tardis-overlay {
+  display: none;
+  z-index: 10;
+  position: fixed; }
+
+.service-button {
+  width: 100%; }
+
+.issue-wrap {
+  display: inline-block;
+  max-width: 230px;
+  position: absolute;
+  top: 260px;
+  left: 36px;
+  display: none; }
+
+#mrin-overlay {
+  position: absolute;
+  top: 197px;
+  left: 26px;
+  max-width: 320px;
+  display: none; }
+
+.prod-overlay {
+  display: none;
+  position: absolute;
+  top: 112px;
+  z-index: 10; }
+
+.mobile-opt {
+  display: none; }
+  @media (max-width: 400px) {
+    .mobile-opt {
+      display: block;
+      margin: 0 auto;
+      width: 100%; } }
+
+@media (max-width: 400px) {
+  .nomobile {
+    display: none; } }

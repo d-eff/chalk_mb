@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Non-Conformance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="common/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="common/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="common/css/layout.css">
+  </head>
+  <body>
+    <div class="blackout"></div>
+    <section class="tardis-banner">
+      <div class="mainContent">
+        <img class="fullImg" src="common/images/non-conf-header.png" alt="store 302">
+        <img class="mobile-opt" src="common/images/non-conf-mobile.png">
+      </div> 
+    </section>
+
+    <section class="tardis-header nomobile">
+      <div class="mainContent">
+        <img class="fullImg" src="common/images/non-conf-breadcrumb.png" alt="Breadcrumbs">
+      </div> 
+    </section>
+    <img src="common/images/non-conf-mobile2.png" class="mobile-opt">
+    <img src="common/images/non-conf-mobile3.png" class="mobile-opt">
+
+    <section class="productWrapper nomobile">
+      <div class="mainContent">
+        <ul class="analysisBoxes">
+          <li class="issue-drop"> <img src="common/images/non-conf-issue1-product.png" alt="product">
+          <span class="issue-wrap">
+            <a href="non-conformances.html"><img src="common/images/non-conf-service-button.png" class="service-button" alt="service-button"></a></span>
+          </li>
+          <li class="wrin-select"> <img src="common/images/non-conf-issue2-product.png" alt="wrin">
+          <img src="common/images/non-conf-mrin-overlay.png" id="mrin-overlay" alt="mrin overlay">
+          </li>
+          <li> <img src="common/images/non-conf-issue3-comments.png" alt="comments"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="ticketWrap">
+      <div class="mainContent">
+        <img src="common/images/non-conf-tickets-full.png" alt="arches" class="arches">
+        <img src="common/images/non-conf-prod-overlay.png" alt="prod overlay" class="prod-overlay">
+      </div>
+    </section>
+
+
+    <section class="footerWrap">
+      <div class="mainContent">
+        <img class="fullImg" src="common/images/footer-btm.jpg" alt="select an item">
+      </div> 
+    </section>
+      <div class="cl"></div>
+      <div class="footer foot_fixed">
+        <div class="foot_wrap">
+          <div class="footerBtm">
+            <div class="footerBtmleft">
+              <div class="mb"><a href="index.html"><span>mb</span></a></div>
+              <div class="loginInfo"> Welcome Back Jim  | <a href="login.html">log out</a> </div>
+              <span class="sync">Sync.</span> </div>
+            <ul class="sitelink">
+              <li><a href="filter_order.html" title="Orders">Orders</a></li>
+              <li><a href="calender_view.html" title="Calendar">Calendar</a></li>
+              <li><a href="order_happiness.html" title="Order Success">Order Success</a></li>
+              <li><a href="non-conformance.html" title="Non-conformance">Non-conformance</a></li>
+              <li><a href="tardis.html" title="TARDIS">TARDIS</a></li>
+              <li><a href="financials.html" title="Financials ">Financials</a></li>
+              <li class="active"><a href="ops_supply.html" title="Ops Supply">Ops Supply</a></li>
+              <li><a href="how_we_do.html" title="How We Do It">How We Do It</a></li>
+              <li><a href="javascript:void(0);" class="let_talk"  title="Let's Talk">Let's Talk</a>
+                <div class="letpopup">
+                  <textarea class="let_comment" placeholder="Send Daryl a message right from here."></textarea>
+                  <input type="submit" class="blueBtn" value="Send now">
+                </div>
+              </li>
+            </ul>
+            <div class="cl"></div>
+          </div>
+          <!--footerBtm end--> 
+        </div>
+        <!--foot_wrap end--> 
+      </div>
+    </div>
+    <script type="text/javascript">
+      var issueService = document.querySelectorAll('.issue-wrap')[0],
+      product = document.querySelectorAll('.issue-drop')[0],
+wrin = document.querySelectorAll('.wrin-select')[0],
+     mrin = document.querySelectorAll('#mrin-overlay')[0],
+     arches = document.querySelectorAll('.arches')[0],
+     prodOver = document.querySelectorAll('.prod-overlay')[0],
+     blackout = document.querySelectorAll('.blackout')[0];
+
+
+product.addEventListener('click', function(e){
+    if(issueService.style.display === 'block') {
+      issueService.style.display = 'none';
+      } else {
+        issueService.style.display = 'block';
+      }
+    }); 
+
+wrin.addEventListener('click', function(){
+      mrin.style.display = mrin.style.display === 'block' ? 'none' : 'block';
+    });
+          
+arches.addEventListener('click', function(){
+    prodOver.style.display = 'block';
+    blackout.style.display = "block";
+    blackout.style.width = window.innerWidth + "px";
+    blackout.style.height = window.innerHeight + "px";
+    });
+prodOver.addEventListener('click', function(){
+    prodOver.style.display = 'none';
+    blackout.style.display = 'none';
+    
+    });
+
+    </script>
+  </body>
+</html>
